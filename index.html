@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Name – Frontend Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --primary: #38bdf8;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      max-width: 1100px;
+      margin: auto;
+      padding: 80px 24px 40px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .hero span {
+      color: var(--primary);
+    }
+
+    .hero p {
+      max-width: 600px;
+      color: var(--muted);
+      margin-top: 20px;
+      font-size: 1.1rem;
+    }
+
+    .cta {
+      margin-top: 32px;
+      display: flex;
+      gap: 16px;
+    }
+
+    .btn {
+      padding: 12px 22px;
+      border-radius: 8px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .primary {
+      background: var(--primary);
+      color: #020617;
+    }
+
+    .secondary {
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      background: transparent;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 24px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 24px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(56,189,248,0.15);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #020617;
+      padding: 8px 12px;
+      border-radius: 999px;
+      margin: 6px;
+      font-size: 0.85rem;
+      border: 1px solid #1e293b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--muted);
+      border-top: 1px solid #1e293b;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="hero">
+    <h1>Hi, I'm <span>Your Name</span></h1>
+    <h1>Frontend Engineer</h1>
+    <p>
+      I build fast, accessible, and beautifully crafted web applications using
+      modern JavaScript, React, and design-driven development.
+    </p>
+
+    <div class="cta">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="#contact" class="btn secondary">Contact Me</a>
+    </div>
+  </div>
+</header>
+
+<section id="projects">
+  <h2>🚀 Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>SaaS Dashboard</h3>
+      <p>
+        A fully responsive analytics dashboard built with React, Tailwind, and REST APIs.
+      </p>
+    </div>
+    <div class="card">
+      <h3>E-commerce Store</h3>
+      <p>
+        High-performance storefront using Next.js, Stripe, and Headless CMS.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Design System</h3>
+      <p>
+        Built a scalable UI library with Storybook and accessibility baked in.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>🛠 Skills</h2>
+  <div class="skills">
+    <span>JavaScript</span>
+    <span>TypeScript</span>
+    <span>React</span>
+    <span>Next.js</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>Tailwind</span>
+    <span>Redux</span>
+    <span>Node.js</span>
+    <span>Figma</span>
+    <span>Accessibility</span>
+    <span>Web Performance</span>
+  </div>
+</section>
+
+<section>
+  <h2>👋 About Me</h2>
+  <p style="max-width: 700px; color: var(--muted);">
+    I’m a frontend engineer with a passion for creating intuitive and elegant user experiences.
+    I focus on writing clean, maintainable code while collaborating closely with designers and backend teams.
+    I love working on products that impact millions of users.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>📬 Contact</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Email</h3>
+      <p>yourname@email.com</p>
+    </div>
+    <div class="card">
+      <h3>GitHub</h3>
+      <p>github.com/yourname</p>
+    </div>
+    <div class="card">
+      <h3>LinkedIn</h3>
+      <p>linkedin.com/in/yourname</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Your Name — Built with ❤️ and JavaScript
+</footer>
+
+</body>
+</html>
